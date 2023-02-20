@@ -5,24 +5,31 @@
 @import './typography.css';
 @import './type-styles.css';
 
-/* Logo */
-#thameen-london {
-  width: 284px;
-  height: 45px;
-  display: inline;
-  margin: 25px auto;
-  padding: 0;
-}
+
+/* DEVICE WIDTH */
+@media only screen and (device-width: 1920px), only screen and (max-width: 1920px) {
+  * {
+    font-size: 16px;
+  }
+
+  /* Logo */
+  #thameen-london {
+    width: 284px;
+    height: 45px;
+    display: inline;
+    margin: 25px auto;
+    padding: 0;
+  }
 
 
-/* Text Block */
-.text-container {
-  @apply bg-white relative mx-auto w-screen px-4 lg:px-8 flex flex-col items-center justify-between md:flex-row top-[80vh] left-0 right-0 py-4;
-}
+  /* Text Block */
+  .text-container {
+    @apply bg-white relative mx-auto w-screen px-4 lg:px-8 flex flex-col items-center justify-between md:flex-row top-[80vh] left-0 right-0 py-4;
+  }
 
-.text-inner {
-  @apply bg-white relative w-full h-full text-center space-y-4 ;
-}
+  .text-inner {
+    @apply bg-white relative w-full h-full text-center space-y-4 ;
+  }
 
   .heading-bold {
     text-transform: uppercase;
@@ -40,21 +47,17 @@
     letter-spacing: 0.12em;
   }
 
-.text-inner {
-  @apply relative w-full h-full text-center space-y-4 ;
-}
 
+  /* FW BANNER */
 
+  .banner-container {
+    @apply absolute inset-x-0 top-0 overflow-hidden h-screen w-screen -z-10
+  }
 
-/* FW BANNER */
-
-.banner-container {
-  @apply absolute inset-x-0 top-0 overflow-hidden h-screen w-screen -z-10
-}
-
-#fw-banner {
-  width: 100vw;
-  height: 100vh;
+  #fw-banner {
+    width: 100vw;
+    height: 100vh;
+  }
 }
 
 
@@ -63,10 +66,16 @@
   .text-container {
     @apply top-[78vh];
   }
+
+
+  .text-inner {
+    @apply relative w-full h-full text-center space-y-2;
+  }
+
   .heading-bold {
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 1.125rem;
+    font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.16em;
   }
@@ -74,7 +83,7 @@
   .heading-reg {
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 1.125rem;
+    font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.16em;
   }
