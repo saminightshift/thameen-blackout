@@ -59,7 +59,7 @@
   }
 
   .banner-container {
-    @apply absolute inset-x-0 top-0 overflow-hidden -z-10
+    @apply absolute inset-x-0 -top-12 overflow-hidden -z-10
   }
 
 }
@@ -68,6 +68,9 @@
 /* MOBILE */
 @media screen and (max-width: 768px) {
 
+  .banner-container {
+    @apply top-0 !important;
+  }
 
   #fw-banner {
     width: 100% !important;
