@@ -24,7 +24,7 @@
 
   /* Text Block */
   .text-container {
-    @apply bg-white relative mx-auto w-screen px-4 lg:px-8 flex flex-col items-center justify-between md:flex-row top-[80vh] left-0 right-0 py-4;
+    @apply bg-white relative mx-auto w-screen px-4 lg:px-8 flex flex-col items-center justify-between md:flex-row top-[70vh] left-0 right-0 py-4;
   }
 
   .text-inner {
@@ -50,21 +50,51 @@
 
   /* FW BANNER */
 
-  .banner-container {
-    @apply absolute inset-x-0 top-0 overflow-hidden h-screen w-screen -z-10
+  #fw-banner {
+    width: 100%;
+    height: 900px;
+    margin: auto;
+    position: relative;
+    top: 0;
   }
 
-  #fw-banner {
-    width: 100vw;
-    height: 100vh;
+  .banner-container {
+    @apply absolute inset-x-0 top-0 overflow-hidden -z-10
   }
+
 }
 
 
 /* MOBILE */
 @media screen and (max-width: 768px) {
+
+
+  #fw-banner {
+    width: 100% !important;
+    height: 720px !important;
+    margin: auto;
+    position: relative;
+    top: 0;
+  }
+
+  .logo-container {
+    position: relative;
+    display: flex;
+    margin-top: 20px;
+  }
+
+  /* Logo */
+  #thameen-london {
+    width: 284px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 0;
+  }
+
   .text-container {
-    @apply top-[78vh];
+    @apply top-[70vh];
   }
 
 
